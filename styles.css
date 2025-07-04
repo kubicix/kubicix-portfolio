@@ -40,6 +40,17 @@ body, .glass-container, .card, .card-title, .card-text, .lead, ul, li, .timeline
   letter-spacing: 1px;
 }
 
+.navbar-gradient-brand {
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  font-size: 1.35rem;
+}
+
 .nav-link {
   color: var(--text-secondary) !important;
   transition: color 0.2s;
@@ -98,7 +109,7 @@ body, .glass-container, .card, .card-title, .card-text, .lead, ul, li, .timeline
 }
 
 .glass-container {
-  background: rgba(26, 26, 26, 0.90);
+  background: rgba(26, 26, 26, 0.45);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -225,6 +236,29 @@ section {
   border: none;
 }
 
+.glass-navbar {
+  background: rgba(26, 26, 26, 0.85) !important;
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.10);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+.nav-pill-glass {
+  background: rgba(40, 40, 40, 0.45);
+  border-radius: 2rem;
+  padding: 0.45em 1.2em;
+  margin: 0 0.25em;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.nav-pill-glass:hover, .nav-pill-glass.active {
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  color: var(--background) !important;
+}
+
 @media (max-width: 768px) {
   .hero-section {
     min-height: 60vh;
@@ -248,5 +282,10 @@ section {
   }
   .skill-progress {
     height: 8px !important;
+  }
+  .nav-pill-glass {
+    margin: 0.2em 0;
+    padding: 0.6em 1em;
+    font-size: 1em;
   }
 } 
