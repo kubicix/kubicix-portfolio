@@ -18,6 +18,8 @@ body {
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body, .glass-container, .card, .card-title, .card-text, .lead, ul, li, .timeline-link, .section-title {
@@ -257,6 +259,13 @@ section {
 .nav-pill-glass:hover, .nav-pill-glass.active {
   background: linear-gradient(90deg, #22c55e, #38bdf8);
   color: var(--background) !important;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {
