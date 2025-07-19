@@ -46,14 +46,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#certificates">Certificates</a></li>
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#interests">Interests</a></li>
-          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#about"><i class="fa-solid fa-user me-1"></i>About</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#skills"><i class="fa-solid fa-code me-1"></i>Skills</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#projects"><i class="fa-solid fa-diagram-project me-1"></i>Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#experience"><i class="fa-solid fa-briefcase me-1"></i>Experience</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#education"><i class="fa-solid fa-graduation-cap me-1"></i>Education</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#certificates"><i class="fa-solid fa-certificate me-1"></i>Certificates</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#interests"><i class="fa-solid fa-heart me-1"></i>Interests</a></li>
+          <li class="nav-item"><a class="nav-link nav-pill-glass" href="#contact"><i class="fa-solid fa-envelope me-1"></i>Contact</a></li>
         </ul>
       </div>
     </div>
@@ -203,7 +203,7 @@
       </div>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card bg-dark-gray h-100 border-0">
+          <div class="card bg-dark-gray h-100 border-0" data-bs-toggle="modal" data-bs-target="#scorpiiModal">
             <div class="card-body">
               <div class="d-flex justify-content-center align-items-center gap-2 mb-2">
                 <span class="project-icon">⚽</span>
@@ -216,7 +216,7 @@
                 <span class="badge glass-badge">MySQL</span>
               </div>
               <div class="mt-2 text-center">
-                <a href="https://scorpiiscore.com" target="_blank" class="btn btn-sm btn-outline-accent-purple me-1">
+                <a href="https://scorpiiscore.com" target="_blank" class="btn btn-sm btn-outline-accent-purple me-1" onclick="event.stopPropagation()">
                   <i class="fa-solid fa-link me-1"></i>Web Site
                 </a>
               </div>
@@ -224,7 +224,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card bg-dark-gray h-100 border-0">
+          <div class="card bg-dark-gray h-100 border-0" data-bs-toggle="modal" data-bs-target="#qmlModal">
             <div class="card-body">
               <div class="d-flex justify-content-center align-items-center gap-2 mb-2">
                 <span class="project-icon">🧑‍🔬</span>
@@ -240,7 +240,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card bg-dark-gray h-100 border-0">
+          <div class="card bg-dark-gray h-100 border-0" data-bs-toggle="modal" data-bs-target="#busTicketModal">
             <div class="card-body">
               <div class="d-flex justify-content-center align-items-center gap-2 mb-2">
                 <span class="project-icon">🚌</span>
@@ -253,7 +253,7 @@
                 <span class="badge glass-badge">Docker</span>
               </div>
               <div class="mt-2 text-center">
-                <a href="https://github.com/kubicix/Bus-Ticket-Booking-Website-w-Codeigniter4" target="_blank" class="btn btn-sm btn-outline-accent-purple me-1">
+                <a href="https://github.com/kubicix/Bus-Ticket-Booking-Website-w-Codeigniter4" target="_blank" class="btn btn-sm btn-outline-accent-purple me-1" onclick="event.stopPropagation()">
                   <i class="fa-solid fa-link me-1"></i>GitHub
                 </a>
               </div>
@@ -261,7 +261,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card bg-dark-gray h-100 border-0">
+          <div class="card bg-dark-gray h-100 border-0" data-bs-toggle="modal" data-bs-target="#smartNavModal">
             <div class="card-body">
               <div class="d-flex justify-content-center align-items-center gap-2 mb-2">
                 <span class="project-icon">🦮</span>
@@ -274,7 +274,7 @@
                 <span class="badge glass-badge">Google Maps API</span>
               </div>
               <div class="mt-2 text-center">
-                <a href="https://github.com/kubicix/Smart-Navigation-App-with-Kotlin" target="_blank" class="btn btn-sm btn-outline-accent-purple me-1">
+                <a href="https://github.com/kubicix/Smart-Navigation-App-with-Kotlin" target="_blank" class="btn btn-sm btn-outline-accent-purple me-1" onclick="event.stopPropagation()">
                   <i class="fa-solid fa-link me-1"></i>GitHub
                 </a>
               </div>
@@ -292,59 +292,221 @@
           <h2 class="mb-3 section-title"><i class="fa-solid fa-briefcase fa-fw me-2" style="color: var(--accent-green)"></i>Professional Experience</h2>
         </div>
       </div>
-      <div class="timeline">
-        <!-- Calgra Group (Linked Timeline) -->
-        <div class="timeline-item mb-5">
-          <div class="d-flex align-items-center mb-2">
-            <h5 class="mb-0">Calgra Group <span class="badge bg-accent-purple ms-2">Remote</span></h5>
-            <span class="text-secondary ms-3">Edinburgh, UK</span>
-          </div>
-          <div class="timeline-link ms-4 ps-2 border-start border-3 border-accent-purple">
-            <div class="mb-3">
-              <span class="fw-bold">Backend & Mobile Developer</span> <span class="text-secondary">(01/2025 – Present)</span>
-              <ul>
-                <li>Led the development of the Scorpii Score mobile application (Flutter) and backend (.NET Core, MSSQL).</li>
-                <li>Implemented match predictions, user scoring, push notifications, payment integration, live scores, social features, and real-time messaging.</li>
-                <li>Tech Stack: <span class="glass-badge">.NET</span> <span class="glass-badge">Flutter</span> <span class="glass-badge">REST API</span> <span class="glass-badge">MySQL</span> <span class="glass-badge">Jira</span> <span class="glass-badge">Firebase</span> <span class="glass-badge">SignalR</span> <span class="glass-badge">Stripe</span></li>
-              </ul>
+      
+      <!-- Modern Experience Cards -->
+      <div class="experience-timeline">
+        
+        <!-- Calgra Group Experience -->
+        <div class="experience-card mb-5" data-aos="fade-up">
+          <div class="experience-header">
+            <div class="company-info">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="company-logo">
+                  <a href="https://calgra.com/" target="_blank" rel="noopener">
+                    <img src="calgra.png" alt="Calgra Group Logo" style="width: 50px; height: 50px; object-fit: contain; border-radius: 12px; border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(45deg, var(--accent-purple), var(--accent-green)) border-box; padding: 4px;">
+                  </a>
+                </div>
+                <div>
+                  <h4 class="company-name mb-1">Calgra Group</h4>
+                  <div class="company-location">
+                    <i class="fa-solid fa-map-marker-alt me-2" style="color: var(--accent-green);"></i>
+                    <span>Edinburgh, UK</span>
+                    <span class="badge bg-accent-purple ms-2">Remote</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <span class="fw-bold">Backend & Mobile Developer Intern</span> <span class="text-secondary">(08/2024 – 01/2025)</span>
-              <ul>
-                <li>Designed and developed comprehensive APIs using .NET Core and EF Core for web and mobile apps.</li>
-                <li>Built mobile apps with Flutter, consuming the API for seamless interaction.</li>
-                <li>Led Scrum meetings and Sprint Planning as Scrum Master, using Jira for task management.</li>
-              </ul>
+          </div>
+          
+          <div class="experience-content">
+            <!-- Career Progression -->
+            <div class="career-positions">
+              
+              <!-- Current Position -->
+              <div class="position-card current-position mb-4">
+                
+                <div class="position-header">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div>
+                      <h5 class="position-title">Backend & Mobile Developer</h5>
+                      <div class="position-duration">
+                        <i class="fa-solid fa-calendar-alt me-2" style="color: var(--accent-green);"></i>
+                        <span>01/2025 – Present</span>
+                        <span class="badge bg-success ms-2">Current</span>
+                        <span class="promotion-badge">
+                          <i class="fa-solid fa-arrow-up me-1"></i>Promoted
+                        </span>
+                      </div>
+                    </div>
+                    <div class="position-type">
+                      <span class="badge bg-accent-green">Full-time</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-content">
+                  <ul class="achievements-list">
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-green);"></i>Led the development of the Scorpii Score mobile application (Flutter) and backend (.NET Core, MSSQL).</li>
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-green);"></i>Implemented match predictions, user scoring, push notifications, payment integration, live scores, social features, and real-time messaging.</li>
+                  </ul>
+                  <div class="tech-stack mt-3">
+                    <span class="tech-badge">.NET</span>
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">REST API</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Jira</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">SignalR</span>
+                    <span class="tech-badge">Stripe</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Previous Position -->
+              <div class="position-card">
+                
+                <div class="position-header">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div>
+                      <h5 class="position-title">Backend & Mobile Developer Intern</h5>
+                      <div class="position-duration">
+                        <i class="fa-solid fa-calendar-alt me-2" style="color: var(--accent-purple);"></i>
+                        <span>08/2024 – 01/2025</span>
+                        <span class="starting-badge">
+                          <i class="fa-solid fa-play me-1"></i>Started Here
+                        </span>
+                      </div>
+                    </div>
+                    <div class="position-type">
+                      <span class="badge bg-accent-purple">Internship</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-content">
+                  <ul class="achievements-list">
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-purple);"></i>Designed and developed comprehensive APIs using .NET Core and EF Core for web and mobile apps.</li>
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-purple);"></i>Built mobile apps with Flutter, consuming the API for seamless interaction.</li>
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-purple);"></i>Led Scrum meetings and Sprint Planning as Scrum Master, using Jira for task management.</li>
+                  </ul>
+                  <div class="tech-stack mt-3">
+                    <span class="tech-badge">.NET</span>
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">REST API</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Jira</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">SignalR</span>
+                    <span class="tech-badge">Stripe</span>
+                  </div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
-        <!-- Prometeon Tyre Group (Linked Timeline) -->
-        <div class="timeline-item mb-5">
-          <div class="d-flex align-items-center mb-2">
-            <h5 class="mb-0">Prometeon Tyre Group</h5>
-            <span class="text-secondary ms-3">Kocaeli, Türkiye</span>
-          </div>
-          <div class="timeline-link ms-4 ps-2 border-start border-3 border-accent-green">
-            <div class="mb-3">
-              <span class="fw-bold">Full Stack Web Developer Intern</span> <span class="text-secondary">(07/2023 – 09/2023)</span>
-              <ul>
-                <li>Developed a Full Stack Intern Register Web App with admin dashboard for 100+ interns.</li>
-                <li>Developed a Full Stack Magazine Web App for publishing company magazines.</li>
-                <li>Tech Stack: <span class="glass-badge">.NET</span> <span class="glass-badge">MSSQL</span> <span class="glass-badge">Git</span> <span class="glass-badge">HTML</span> <span class="glass-badge">CSS</span> <span class="glass-badge">JS</span> <span class="glass-badge">Bootstrap</span></li>
-              </ul>
+        
+        <!-- Prometeon Tyre Group Experience -->
+        <div class="experience-card mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="experience-header">
+            <div class="company-info">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="company-logo">
+                  <a href="https://www.prometeon.com/" target="_blank" rel="noopener">
+                    <img src="prometeon.png" alt="Prometeon Tyre Group Logo" style="width: 50px; height: 50px; object-fit: contain; border-radius: 12px; border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(45deg, var(--accent-green), var(--accent-purple)) border-box; padding: 4px;">
+                  </a>
+                </div>
+                <div>
+                  <h4 class="company-name mb-1">Prometeon Tyre Group</h4>
+                  <div class="company-location">
+                    <i class="fa-solid fa-map-marker-alt me-2" style="color: var(--accent-green);"></i>
+                    <span>Kocaeli, Türkiye</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <span class="fw-bold">Data Analyst Intern</span> <span class="text-secondary">(07/2022 – 09/2022)</span>
-              <ul>
-                <li>Managed factory database using Dremio, FactoryTalk, and MSSQL (~10,000 entries daily).</li>
-                <li>Used SQL, Grafana, and Python to visualize data, improving accuracy by ~30%.</li>
-                <li>Worked on machine monitoring systems for real-time data collection and anomaly detection.</li>
-                <li>Improved query speeds by up to ~50%.</li>
-                <li>Tech Stack: <span class="glass-badge">Dremio</span> <span class="glass-badge">Grafana</span> <span class="glass-badge">MSSQL</span> <span class="glass-badge">Git</span> <span class="glass-badge">Python</span></li>
-              </ul>
+          </div>
+          
+          <div class="experience-content">
+            <!-- Career Timeline for Multiple Internships -->
+            <div class="career-positions">
+              
+              <!-- Web Developer Position -->
+              <div class="position-card mb-4">
+                
+                <div class="position-header">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div>
+                      <h5 class="position-title">Full Stack Web Developer Intern</h5>
+                      <div class="position-duration">
+                        <i class="fa-solid fa-calendar-alt me-2" style="color: var(--accent-green);"></i>
+                        <span>07/2023 – 09/2023</span>
+                        <span class="return-badge">
+                          <i class="fa-solid fa-repeat me-1"></i>Returned
+                        </span>
+                      </div>
+                    </div>
+                    <div class="position-type">
+                      <span class="badge bg-accent-green">Internship</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-content">
+                  <ul class="achievements-list">
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-green);"></i>Developed a Full Stack Intern Register Web App with admin dashboard for 100+ interns.</li>
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-green);"></i>Developed a Full Stack Magazine Web App for publishing company magazines.</li>
+                  </ul>
+                  <div class="tech-stack mt-3">
+                    <span class="tech-badge">.NET</span>
+                    <span class="tech-badge">MSSQL</span>
+                    <span class="tech-badge">Git</span>
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JS</span>
+                    <span class="tech-badge">Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Data Analyst Position -->
+              <div class="position-card">
+                
+                <div class="position-header">
+                  <div class="d-flex justify-content-between align-items-start flex-wrap">
+                    <div>
+                      <h5 class="position-title">Data Analyst Intern</h5>
+                      <div class="position-duration">
+                        <i class="fa-solid fa-calendar-alt me-2" style="color: var(--accent-purple);"></i>
+                        <span>07/2022 – 09/2022</span>
+                        <span class="starting-badge">
+                          <i class="fa-solid fa-play me-1"></i>First Experience
+                        </span>
+                      </div>
+                    </div>
+                    <div class="position-type">
+                      <span class="badge bg-accent-purple">Internship</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-content">
+                  <ul class="achievements-list">
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-purple);"></i>Managed factory database using Dremio, FactoryTalk, and MSSQL (~10,000 entries daily).</li>
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-purple);"></i>Used SQL, Grafana, and Python to visualize data, improving accuracy by ~30%.</li>
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-purple);"></i>Worked on machine monitoring systems for real-time data collection and anomaly detection.</li>
+                    <li><i class="fa-solid fa-check-circle me-2" style="color: var(--accent-purple);"></i>Improved query speeds by up to ~50%.</li>
+                  </ul>
+                  <div class="tech-stack mt-3">
+                    <span class="tech-badge">Dremio</span>
+                    <span class="tech-badge">Grafana</span>
+                    <span class="tech-badge">MSSQL</span>
+                    <span class="tech-badge">Git</span>
+                    <span class="tech-badge">Python</span>
+                  </div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -529,6 +691,244 @@
       </div>
     </div>
   </section>
+
+  <!-- Project Modals -->
+  <!-- Scorpii Score Modal -->
+  <div class="modal fade" id="scorpiiModal" tabindex="-1" aria-labelledby="scorpiiModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark-gray border-0" style="border-radius: 18px;">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title text-white" id="scorpiiModalLabel">
+            <span class="project-icon me-2">⚽</span>Scorpii Score - Social Football Platform
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-white">
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h6 class="text-accent-green">Project Overview</h6>
+              <p>Scorpii Score is a comprehensive social football prediction platform where users can create profiles, connect with friends, and participate in football-related content and tournaments. As the lead developer, I handled both backend (.NET Core) and mobile (Flutter) development.</p>
+              
+              <h6 class="text-accent-purple mt-3">Key Features</h6>
+              <ul>
+                <li>User authentication and profile management</li>
+                <li>Friend connections and social interactions</li>
+                <li>Match predictions with scoring system</li>
+                <li>Push notifications for live updates</li>
+                <li>Payment integration with Stripe</li>
+                <li>Real-time messaging with SignalR</li>
+                <li>Live football scores and statistics</li>
+                <li>Tournament creation and management</li>
+              </ul>
+              
+              <h6 class="text-accent-green mt-3">Technical Implementation</h6>
+              <p>Built using modern technologies including .NET Core for robust backend APIs, Flutter for cross-platform mobile experience, and MySQL for efficient data management. The application is currently live on both Google Play Store and Apple App Store.</p>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-accent-purple">Tech Stack</h6>
+              <div class="mb-3">
+                <span class="badge glass-badge">.NET Core</span>
+                <span class="badge glass-badge">Entity Framework</span>
+                <span class="badge glass-badge">Flutter</span>
+                <span class="badge glass-badge">Dart</span>
+                <span class="badge glass-badge">MySQL</span>
+                <span class="badge glass-badge">SignalR</span>
+                <span class="badge glass-badge">Firebase</span>
+                <span class="badge glass-badge">Stripe</span>
+                <span class="badge glass-badge">REST API</span>
+                <span class="badge glass-badge">Jira</span>
+              </div>
+              
+              <h6 class="text-accent-green">Project Status</h6>
+              <p class="small">🟢 Live & Active<br>
+              📱 Available on App Stores<br>
+              👥 Growing User Base</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-secondary">
+          <a href="https://scorpiiscore.com" target="_blank" class="btn btn-accent-green">
+            <i class="fa-solid fa-globe me-2"></i>Visit Website
+          </a>
+          <button type="button" class="btn btn-outline-accent-purple" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QML Research Modal -->
+  <div class="modal fade" id="qmlModal" tabindex="-1" aria-labelledby="qmlModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark-gray border-0" style="border-radius: 18px;">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title text-white" id="qmlModalLabel">
+            <span class="project-icon me-2">🧑‍🔬</span>Quantum Machine Learning Research
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-white">
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h6 class="text-accent-green">Research Overview</h6>
+              <p>An advanced academic research project exploring the intersection of Quantum Computing and Machine Learning. This project investigates QML principles and their practical applications in solving complex computational problems.</p>
+              
+              <h6 class="text-accent-purple mt-3">Research Areas</h6>
+              <ul>
+                <li>Quantum algorithm development for ML optimization</li>
+                <li>Hybrid classical-quantum neural networks</li>
+                <li>Quantum feature maps and data encoding</li>
+                <li>Performance comparison with classical ML methods</li>
+                <li>Real-world application scenarios</li>
+              </ul>
+              
+              <h6 class="text-accent-green mt-3">Academic Impact</h6>
+              <p>The research was conducted as part of my graduation thesis and submitted to TÜBİTAK (Scientific and Technological Research Council of Turkey) for evaluation and potential funding.</p>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-accent-purple">Technologies</h6>
+              <div class="mb-3">
+                <span class="badge glass-badge">IBM Qiskit</span>
+                <span class="badge glass-badge">PennyLane</span>
+                <span class="badge glass-badge">Python</span>
+                <span class="badge glass-badge">NumPy</span>
+                <span class="badge glass-badge">Matplotlib</span>
+                <span class="badge glass-badge">Jupyter</span>
+              </div>
+              
+              <h6 class="text-accent-green">Status</h6>
+              <p class="small">📊 Research Completed<br>
+              📝 TÜBİTAK Submission<br>
+              🎓 Graduation Project</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-secondary">
+          <button type="button" class="btn btn-outline-accent-purple" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bus Ticket Modal -->
+  <div class="modal fade" id="busTicketModal" tabindex="-1" aria-labelledby="busTicketModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark-gray border-0" style="border-radius: 18px;">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title text-white" id="busTicketModalLabel">
+            <span class="project-icon me-2">🚌</span>Bus Ticket Reservation System
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-white">
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h6 class="text-accent-green">Project Overview</h6>
+              <p>A comprehensive bus ticket reservation system featuring an interactive seat selection map, secure payment processing, and real-time location services. Built as a full-stack web application with modern development practices.</p>
+              
+              <h6 class="text-accent-purple mt-3">Key Features</h6>
+              <ul>
+                <li>Interactive seat map with real-time availability</li>
+                <li>Secure payment processing via Stripe integration</li>
+                <li>Google Maps API for route visualization</li>
+                <li>User authentication and booking history</li>
+                <li>Admin dashboard for bus and route management</li>
+                <li>Responsive design for all devices</li>
+                <li>Docker containerization for easy deployment</li>
+              </ul>
+              
+              <h6 class="text-accent-green mt-3">Development Approach</h6>
+              <p>Developed using CodeIgniter 4 framework with clean MVC architecture, ensuring maintainable and scalable code. Implemented modern web technologies for optimal user experience.</p>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-accent-purple">Tech Stack</h6>
+              <div class="mb-3">
+                <span class="badge glass-badge">CodeIgniter 4</span>
+                <span class="badge glass-badge">PHP</span>
+                <span class="badge glass-badge">HTML5</span>
+                <span class="badge glass-badge">CSS3</span>
+                <span class="badge glass-badge">JavaScript</span>
+                <span class="badge glass-badge">MySQL</span>
+                <span class="badge glass-badge">Stripe API</span>
+                <span class="badge glass-badge">Google Maps</span>
+                <span class="badge glass-badge">Docker</span>
+                <span class="badge glass-badge">Bootstrap</span>
+              </div>
+              
+              <h6 class="text-accent-green">Project Status</h6>
+              <p class="small">✅ Completed<br>
+              🔓 Open Source<br>
+              📚 Educational Purpose</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-secondary">
+          <a href="https://github.com/kubicix/Bus-Ticket-Booking-Website-w-Codeigniter4" target="_blank" class="btn btn-accent-green">
+            <i class="fa-brands fa-github me-2"></i>View on GitHub
+          </a>
+          <button type="button" class="btn btn-outline-accent-purple" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smart Navigation Modal -->
+  <div class="modal fade" id="smartNavModal" tabindex="-1" aria-labelledby="smartNavModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark-gray border-0" style="border-radius: 18px;">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title text-white" id="smartNavModalLabel">
+            <span class="project-icon me-2">🦮</span>SmartNavigation - Accessibility App
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-white">
+          <div class="row g-4">
+            <div class="col-md-8">
+              <h6 class="text-accent-green">Project Mission</h6>
+              <p>SmartNavigation is an Android application designed specifically for visually and hearing impaired users to navigate to bus stops using voice commands and real-time directions. This project demonstrates my commitment to developing inclusive technology solutions.</p>
+              
+              <h6 class="text-accent-purple mt-3">Accessibility Features</h6>
+              <ul>
+                <li>Voice command recognition for hands-free operation</li>
+                <li>Audio feedback for navigation instructions</li>
+                <li>Real-time GPS tracking and route optimization</li>
+                <li>Integration with public transportation data</li>
+                <li>Large text and high contrast UI elements</li>
+                <li>Vibration feedback for important notifications</li>
+                <li>Offline map capabilities for areas with poor connectivity</li>
+              </ul>
+              
+              <h6 class="text-accent-green mt-3">Social Impact</h6>
+              <p>This application addresses a real-world need by providing enhanced mobility solutions for individuals with disabilities, promoting independence and accessibility in public transportation.</p>
+            </div>
+            <div class="col-md-4">
+              <h6 class="text-accent-purple">Technologies</h6>
+              <div class="mb-3">
+                <span class="badge glass-badge">Kotlin</span>
+                <span class="badge glass-badge">Android SDK</span>
+                <span class="badge glass-badge">Speech Recognition</span>
+                <span class="badge glass-badge">Google Maps API</span>
+                <span class="badge glass-badge">Location Services</span>
+                <span class="badge glass-badge">Text-to-Speech</span>
+                <span class="badge glass-badge">Material Design</span>
+              </div>
+              
+              <h6 class="text-accent-green">Project Impact</h6>
+              <p class="small">♿ Accessibility Focused<br>
+              🎯 Social Impact<br>
+              📱 Mobile Native</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top border-secondary">
+          <a href="https://github.com/kubicix/Smart-Navigation-App-with-Kotlin" target="_blank" class="btn btn-accent-green">
+            <i class="fa-brands fa-github me-2"></i>View on GitHub
+          </a>
+          <button type="button" class="btn btn-outline-accent-purple" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="mt-5 pt-4 pb-3" style="background: rgba(26, 26, 26, 0.85); border-top: 1.5px solid var(--border-color); box-shadow: 0 -2px 16px 0 rgba(31, 38, 135, 0.10);">
